@@ -1,0 +1,11 @@
+<div class="card" *ngIf="item">
+  <div class="card__image">
+    <div class="img" [style.background-image]="'url(' + item.img + ')'"></div>
+    <p ngClass="card__image__type {{getName(item.type)?.toLowerCase()}}">{{getName(item.type)}}</p>
+  </div>
+  <h4 class="card__title">{{item.title}}</h4>
+  <p class="card__text">{{item.description}}</p>
+  <div class="card__close">
+    <img src="assets/img/close.svg" alt="">
+  </div>
+</div>

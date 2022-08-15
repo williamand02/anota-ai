@@ -1,0 +1,8 @@
+<div class="search">
+  <input class="search__input" type="text" [(ngModel)]="buscar" name="search" (ngModelChange)="this.addNewItem($event)">
+  <span class="search__append">
+    <div class="search__append__button">
+      <img src="assets/img/lupa.svg" alt="">
+    </div>
+  </span>
+</div>

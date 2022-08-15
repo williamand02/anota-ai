@@ -1,0 +1,29 @@
+$border-greey: #E0E0E2
+
+.search
+  width: 90%
+  max-width: 700px
+  margin: 25px auto
+  display: flex
+  &__input
+    border: 1px solid $border-greey
+    border-radius: 5px 0px 0px 5px
+    width: 100%
+    padding: .7em
+    &:focus-visible
+      border: 1px solid #1390F3
+      outline: none
+    &:focus-visible ~ .search__append .search__append__button
+      border: 1px solid #1390F3
+  &__append
+    &__button
+      height: 100%
+      border: 1px solid $border-greey
+      border-radius: 0px 5px 5px 0px
+      background-color: #ffffff
+      box-sizing: border-box
+      >img
+        width: 2em
+        position: relative
+        top: 50%
+        transform: translateY(-50%)

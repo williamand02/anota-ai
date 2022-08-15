@@ -1,0 +1,7 @@
+<div class="container">
+  <app-header></app-header>
+  <app-search (searchValue)="addSearchValue($event)"></app-search>
+  <div *ngIf="items$ | async as items">
+    <app-list [items]="listFilter(items)"></app-list>
+  </div>
+</div>

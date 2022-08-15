@@ -1,0 +1,70 @@
+$border-greey: #E0E0E2
+
+.card
+  border-radius: 5px
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22)
+  margin: 15px
+  width: 225px
+  transition: all 0.3s ease-out
+  background-color: #ffffff
+  padding-bottom: 10px
+  position: relative
+  &:hover
+    transform: scale(1.05)
+    cursor: pointer
+  &__image
+    position: relative
+    >.img
+      height: 150px
+      background-size: cover
+      background-position: center
+      border-radius: 5px 5px 0px 0px
+    &__type
+      color: #ffffff
+      border-radius: 5px
+      padding: 2px 5px
+      position: absolute
+      margin: 5px
+      bottom: 0
+      right: 0
+    .paisagem
+      background-color: #0458FE
+    .flor
+      background-color: #FE0346
+    .pizza
+      background-color: #8F8D05
+  &__title
+    font-size: 1.5em
+    margin: 10px 10px
+
+  &__text
+    font-size: 16px
+    display: -webkit-box
+    text-overflow: ellipsis
+    overflow: hidden
+    -webkit-line-clamp: 8
+    -webkit-box-orient: vertical
+    padding: 10px
+    height: 140px
+    padding: 0px 10px 10px 10px
+    margin: 0
+  &__close
+    position: absolute
+    top: -10px
+    right: -10px
+    padding: 2px
+    cursor: pointer
+    background-color: #ffffff
+    border: 2px solid $border-greey
+    border-radius: 25px
+    display: flex
+    transition: all 0.3s
+    &:hover
+      border-color: #a9a9a9
+    >img
+      width: 20px
+      height: 20px
+      transition: all 0.3s ease-out
+      &:hover
+        filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)
+        transform: rotate(-90deg)
